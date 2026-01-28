@@ -60,7 +60,7 @@ public class CustomArrayList<E> {
         }
 
         for (int i=0; i<size; i++){
-            System.out.print(elementData[i]+" ");
+            System.out.println(elementData[i]+" ");
         }
     }
 
@@ -72,17 +72,21 @@ public class CustomArrayList<E> {
     }
 
 
-
-
-
-
-
-
-
-        )
-    }
-
     public static void main(String[] args) {
+        System.out.println("Custom ArrayList ");
+
+        CustomArrayList customEmpList = new CustomArrayList();
+
+        Employee emp1 = new Employee(1,"Dhanaji Gundap","Development", "Sr. Java Developer");
+        Employee emp2 = new Employee(2,"Yogesh Bate","Quality Ass.", "Sr. QA");
+        Employee emp3 = new Employee(3,"Pravin Patil","Marketing", "Sales Mgr");
+
+        customEmpList.add(emp1);
+        customEmpList.add(emp2);
+        customEmpList.add(emp3);
+
+        customEmpList.display();
+
 
     }
 }
